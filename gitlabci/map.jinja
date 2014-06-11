@@ -1,0 +1,7 @@
+{% set gitlabci = salt['grains.filter_by']({
+    'default': {
+        'pkg': 'gitlabci',
+        'service': 'gitlabci',
+        'config': '/etc/gitlabci.conf',
+    },
+}, merge=salt['pillar.get']('gitlabci:lookup')) %}
