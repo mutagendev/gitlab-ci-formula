@@ -1,14 +1,12 @@
-================
-template-formula
-================
+=================
+gitlab-ci-formula
+=================
 
-A saltstack formula that is empty. It has dummy content to help with a quick
-start on a new formula.
+`ci <https://gitlab.com/gitlab-org/gitlab-ci/blob/master/doc/install/installation.md>`_
 
-.. note::
+`runner <https://gitlab.com/gitlab-org/gitlab-ci-runner/blob/master/README.md>`_
 
-    See the full `Salt Formulas installation and usage instructions
-    <http://docs.saltstack.com/topics/conventions/formulas.html>`_.
+Salt formula for deploying Gitlab CI.
 
 Available states
 ================
@@ -16,7 +14,12 @@ Available states
 .. contents::
     :local:
 
-``template``
+``gitlabci``
 ------------
 
-Installs the template package, and starts the associated template service.
+Installs Gitlab CI.
+
+``gitlabci.runner``
+-------------------
+
+Installs Gitlab CI Runner.
